@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ------------ ROOT VARIABLES ------------ */
+:root {
+  --color-light: rgba(132, 139, 200, 0.18);
+  --card-border-radius: 2rem;
+  --card-padding: 1.8rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+main {
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-item {
+  padding: 0 15px;
+  color: white
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+a:hover {
+  color: white;
+}
+
+.navbar {
+  color: white
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  background-color: var(--bs-body-color);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.sec1 {
+  color: #000000;
+  display: flex;
+  margin: 3rem 1rem;
+}
+
+.sec1 a {
+  color: #000000;
+}
+
+.row {
+  justify-content: center;
+}
+
+.cards {
+  padding: 1rem 2rem;
+  display: flex;
+  width: auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card-title {
+  padding: 1rem 1rem 0;
+}
+
+.card-body {
+  display: flex;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ------------ ROOT VARIABLES ------------ */
+:root {
+  --color-light: rgba(132, 139, 200, 0.18);
+  --card-border-radius: 2rem;
+  --card-padding: 1.8rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+main {
+  margin: 3rem 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+.nav-item {
+  padding: 0 15px;
+  color: white
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: gray;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  background-color: var(--bs-body-color);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.heading {
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #E9D5DA, #827397, #4D4C7D, #363062);
+  background-size: 600% 600%;
+  animation: Gradient 5s ease infinite;
+  gap: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.content {
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.content .links {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.row {
+  justify-content: center;
+}
+
+.cards {
+  padding: 1rem 2rem;
+  display: flex;
+  width: auto;
+}
+
+.card {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

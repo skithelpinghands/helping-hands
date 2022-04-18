@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ------------ ROOT VARIABLES ------------ */
+:root {
+  --color-light: rgba(132, 139, 200, 0.18);
+  --card-border-radius: 2rem;
+  --card-padding: 1.8rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+  font-family: poppins, sans-serif;
+  background: linear-gradient(90deg, #EDE6DB, #417D7A, #1D5C63, #1A3C40);
+  background-size: 600% 600%;
+  animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+main {
+  margin: 2rem
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  color: #000000;
+  align-items: center;
+}
+
+a:hover {
+  color: gray;
+}
+
+.nav-item {
+  padding: 0 15px;
+  color: white
+}
+
+.navbar {
+  color: white
+}
+
+.navbar a {
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  background-color: var(--bs-body-color);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.heading{
+  text-align: center;
+}
+
+section {
+  display: flex;
+  color: #000000;
+  margin: 3rem 1rem;
+}
+
+.row {
+  justify-content: center;
+}
+
+.cards {
+  padding: 1rem 2rem;
+  display: flex;
+  width: auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card-title {
+  padding: 1rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+}

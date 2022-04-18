@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ------------ ROOT VARIABLES ------------ */
+:root {
+  --color-light: rgba(132, 139, 200, 0.18);
+  --card-border-radius: 2rem;
+  --card-padding: 1.8rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body {
+  font-family: poppins, sans-serif;
+  background: linear-gradient(90deg, #F6E7D8, #F68989, #C65D7B, #874356);
+  background-size: 600% 600%;
+  animation: Gradient 5s ease infinite;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0 50%
+  }
+}
+
+main {
+  justify-content: center;
+  display: grid;
+  color: #000000;
+  margin: 3rem 1rem;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+.nav-item {
+  padding: 0 15px;
+  color: white
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: white;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.dropdown-menu {
+  min-width: 5rem;
+  background-color: var(--bs-body-color);
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.sec1 {
+  justify-content: center;
+  display: grid;
+  color: #000000;
+  margin: 3rem 1rem;
+  text-align: center;
+  height: 100vh;
+}
+
+.row {
+  padding: 5rem 0;
+  justify-content: center;
+}
+
+.cards {
+  padding: 1rem 2rem;
+  display: flex;
+  width: auto;
+}
+
+.card {
+  background: #000000;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card-title {
+  padding: 1rem 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+}
